@@ -1,0 +1,8 @@
+Navigate to Edit >> Preferences >> Protocol
+Select IEEE 802.11 and Edit Decryption Keys
+Under Key type select wpa-pwd and add the following text: 
+Induction:Coherer (This is the SSID and password)
+
+a5001e18e0b3f792278825bc3abff72d7021d7c157b600470ef730e2490835d4 
+79258f6ceeecedd3482b92deaabdb675f09bcb4003ef5074f5ddb10a94ebe00a 
+23a9ee58c7810546ae3e7509fda9f97435778d689e53a54891c56d02f18ca162
