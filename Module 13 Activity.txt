@@ -1,0 +1,24 @@
+======Integrity Check ========
+openssl dgst -md5 samplefile
+openssl dgst -sha1 samplefile
+openssl dgst -sha256 samplefile
+
+cp samplefile samplefile.1
+openssl dgst -md5 samplefile.1
+openssl dgst -sha1 samplefile.1
+openssl dgst -sha256 samplefile.1
+
+=======Encryption===========
+
+key=$(openssl rand -hex 16)
+echo $key
+iv=$(openssl rand -hex 16)
+echo $iv
+openssl aes-128-cbc -K $key -iv $iv -in <File to encrypt> -out <Output File>
+xxd -l 16 <Output File>
+
+openssl aes-128-cbc -d -K $key -iv $iv -in <Output File> -out <New Plaintext File>
+
+=======Check for Match========
+
+diff -s <File to encrypt> <New Plaintext File>
