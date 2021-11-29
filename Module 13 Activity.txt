@@ -1,4 +1,8 @@
+======Git Clone ========
+git clone https://github.com/sharris2689/ITN261.git
+
 ======Integrity Check ========
+
 openssl dgst -md5 samplefile
 openssl dgst -sha1 samplefile
 openssl dgst -sha256 samplefile
